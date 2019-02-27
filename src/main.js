@@ -25,7 +25,6 @@ client.getDocument(NERDNIGHT)
   .catch(error => console.error(error))
 
 function displaySlide() {
-  console.log(index)
   slide.src = builder.image(images[index])
   index++
   if (index > images.length) {
