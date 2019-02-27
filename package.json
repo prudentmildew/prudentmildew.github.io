@@ -1,0 +1,15 @@
+{
+  "name": "gooth-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Erland Glad Solstrand <erland.glad.solstrand@eggsdesign.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "@sanity/client": "^0.140.8",
+    "@sanity/image-url": "^0.140.8"
+  }
+}
