@@ -221,4 +221,4 @@ module.exports=require("./lib/builder").default;
 },{"./lib/builder":"wMJ2"}],"epB2":[function(require,module,exports) {
 "use strict";var e=n(require("@sanity/client")),t=n(require("@sanity/image-url"));function n(e){return e&&e.__esModule?e:{default:e}}var r="98555641-f6f9-45ac-9066-6415908c2151",a=6e3,u=document.getElementById("slide"),c=new e.default({projectId:"mx0t3s2w",dataset:"production",useCdn:!0}),l=new t.default(c),i=[],o=0,s=null;function d(){u.src=l.image(i[o]),++o>i.length&&(clearInterval(s),location.reload())}c.getDocument(r).then(function(e){i=e.images,s=setInterval(d,a)}).catch(function(e){return console.error(e)});
 },{"@sanity/client":"hwIP","@sanity/image-url":"DC10"}]},{},["epB2"], null)
-//# sourceMappingURL=build/main.7f8a0853.map
+//# sourceMappingURL=main.7f8a0853.map
