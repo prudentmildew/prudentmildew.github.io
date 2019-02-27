@@ -11,5 +11,8 @@
   "dependencies": {
     "@sanity/client": "^0.140.8",
     "@sanity/image-url": "^0.140.8"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html"
   }
 }
