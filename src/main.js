@@ -20,16 +20,13 @@ let timer = null
 client.getDocument(NERDNIGHT)
   .then(exhibition => {
     images = exhibition.images
-    displayImage()
-    timer = setInterval(displayImage, TIMEOUT)
+    timer = setInterval(displaySlide, TIMEOUT)
   })
   .catch(error => console.error(error))
 
-function displayImage() {
-  console.log(builder.image(images[index]).toString())
-
+function displaySlide() {
+  console.log(index)
   slide.src = builder.image(images[index])
-
   index++
   if (index > images.length) {
     clearInterval(timer)
